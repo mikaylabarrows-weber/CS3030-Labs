@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+
+directory = "task8"
+
+if os.path.isdir(directory):
+	sys.stdout.write("Success.\n")
+else:
+	sys.stderr.write("Error.\n")
