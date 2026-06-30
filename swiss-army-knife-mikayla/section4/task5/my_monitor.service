@@ -1,0 +1,12 @@
+[Unit]
+Description=Monitor Service
+After=network.target
+
+[Service]
+ExecStart=/home/mikaylabarrows/CS3030-Labs/swiss-army-knife-mikayla/section1/.venv/bin/python3 -u /home/mikaylabarrows/CS3030-Labs/swiss-army-knife-mikayla/section4/task4/alert_system.py
+WorkingDirectory=/home/mikaylabarrows/CS3030-Labs/swiss-army-knife-mikayla/section4/task4
+Restart=always
+User=mikaylabarrows
+
+[Install]
+WantedBy=multi-user.target
